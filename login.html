@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sign Up | Maxspec</title>
+    <title>Login | Maxspec</title>
     <style>
         body {
             margin: 0;
@@ -16,7 +16,7 @@
             height: 100vh;
         }
 
-        .signup-container {
+        .login-container {
             background-color: rgba(255, 255, 255, 0.1);
             padding: 40px;
             border-radius: 10px;
@@ -36,7 +36,6 @@
             font-weight: bold;
         }
 
-        input[type="text"],
         input[type="email"],
         input[type="password"] {
             width: 100%;
@@ -61,38 +60,35 @@
             background-color: #007979;
         }
 
-        .login-link {
+        .signup-link {
             text-align: center;
             margin-top: 15px;
         }
 
-        .login-link a {
+        .signup-link a {
             color: #00ffff;
             text-decoration: none;
         }
 
-        .login-link a:hover {
+        .signup-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="signup-container">
-        <h2>Create Your Maxspec Account</h2>
+    <div class="login-container">
+        <h2>Login to Maxspec</h2>
         <form action="/webpage2.0.html">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required />
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
 
-            <input type="submit" value="Sign Up" />
+            <input type="submit" value="Login"/>
 
-            <div class="login-link">
-                Already have an account? <a href="/login.html">Login here</a>
+            <div class="signup-link">
+                Don't have an account? <a href="/sign-up.html">Sign up here</a>
             </div>
         </form>
     </div>
